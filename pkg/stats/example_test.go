@@ -37,7 +37,7 @@ func ExampleAvg() {
 }
 
 func ExampleTotalInCategory() {
-	paySrc := []types.Payment {
+	myPay := []types.Payment {
 		{
 			ID: 1,
 			Amount: 100,
@@ -64,7 +64,7 @@ func ExampleTotalInCategory() {
 			Status: types.StatusOk,
 		},
 	}
-	fmt.Println(TotalInCategory(paySrc, "test"))
+	fmt.Println(TotalInCategory(myPay, "test"))
 
 	// Output:
 	// 350

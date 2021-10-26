@@ -14,8 +14,11 @@ func Avg(payments []types.Payment) (avgSum types.Money) {
 		if payment.Status == types.StatusFail {
 			continue
 	} else {
-		sum = append(sum, total)
+		total += payment.Amount
 	}
+
+	sum = append(sum, total)
+}
 
 	avgSum = total / types.Money(len(sum))
 	return

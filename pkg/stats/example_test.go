@@ -25,14 +25,14 @@ func ExampleAvg() {
 		},
 		{
 			ID: 4,
-			Amount: 50,
+			Amount: 100,
 			Status: types.StatusOk,
 		},
 	}
 	fmt.Println(Avg(myPay))
 
 	// Output:
-	// 275
+	// 200
 
 }
 

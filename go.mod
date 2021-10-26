@@ -1,4 +1,4 @@
-module github.com/Sherafgan-hub/stats
+module github.com/Sherafgan-hub/stats/v2
 
 go 1.17
 
